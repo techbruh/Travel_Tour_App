@@ -56,15 +56,15 @@ class OpeningPage extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 30, top: 20),
             child: Column(
               children: [
                 Align(
                   alignment: Alignment.topLeft,
                   child: Text.rich( TextSpan(
                       children: [
-                        TextSpan(text: "Welcome \nto ", style: TextStyle(fontSize: 50, color: Colors.cyan[900])),
-                        TextSpan(text: "TravelX",style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold,color: Colors.cyan[900]))
+                        TextSpan(text: "Welcome \nto ", style: TextStyle(fontSize: 38, color: Colors.cyan[900])),
+                        TextSpan(text: "TravelX",style: TextStyle(fontSize: 38, fontWeight: FontWeight.bold,color: Colors.cyan[900]))
                       ]
                   )
                   ),
@@ -72,7 +72,7 @@ class OpeningPage extends StatelessWidget {
               ],
             ),
           ),
-          Image.asset('assets/images/opening.png')
+          Image.asset('assets/images/opening_1.png',)
         ],
 
       ),
