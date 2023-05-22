@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:travel_tour_app/features/home/presentation/screens/openingpage.dart';
+import 'package:travel_tour_app/features/home/presentation/screens/onboarding_1.dart';
 
 
 class OpeningPage extends StatelessWidget {

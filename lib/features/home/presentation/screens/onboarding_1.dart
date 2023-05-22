@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:travel_tour_app/features/home/presentation/screens/tx_sign.dart';
+import 'package:travel_tour_app/features/home/presentation/screens/onboarding_2.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -79,10 +79,10 @@ class HomePage extends StatelessWidget {
                     child: CircleAvatar(
                       backgroundColor: Colors.red[600],
                       radius: 35,
-                      child: Icon(Icons.arrow_forward_ios,
-                        color: Colors.white,
-                        size: 35,
-                      ),
+                      // child: Icon(Icons.,
+                      //   color: Colors.white,
+                      //   size: 35,
+                      // ),
                     ),
                   ),
                 ),
