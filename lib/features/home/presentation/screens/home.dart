@@ -66,8 +66,7 @@ class OpeningPage extends StatelessWidget {
                         TextSpan(text: "Welcome \nto ", style: TextStyle(fontSize: 38, color: Colors.cyan[900])),
                         TextSpan(text: "TravelX",style: TextStyle(fontSize: 38, fontWeight: FontWeight.bold,color: Colors.cyan[900]))
                       ]
-                  )
-                  ),
+                  )),
                 ),
               ],
             ),
