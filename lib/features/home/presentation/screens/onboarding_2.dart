@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:travel_tour_app/features/home/presentation/screens/sign_up.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -47,6 +48,43 @@ class _LoginPageState extends State<LoginPage> {
           Padding(
             padding: const EdgeInsets.only(left: 50),
             child: Text("You deserve to explore more.", style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white, fontSize: 35)),
+          ),
+          SizedBox(
+            height: 350,
+          ),
+          GestureDetector(
+            onTap: (){
+              Get.off(
+                SignUp()
+              );
+            },
+            child: Container(
+              height: 85,
+              width: 330,
+              decoration: BoxDecoration(
+                  color: Colors.cyan[900],
+                  borderRadius: BorderRadius.circular(50)
+              ),
+              child: Align(
+                  alignment: Alignment.center,
+                  child: Text("Sign up", style: TextStyle(fontSize: 25, color: Colors.white),)
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 22,
+          ),
+          Container(
+            height: 85,
+            width: 330,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(50)
+            ),
+            child: Align(
+              alignment: Alignment.center,
+                child: Text("Sign in", style: TextStyle(fontSize: 25, color: Colors.cyan[900]),)
+            ),
           )
         ],
       ),
