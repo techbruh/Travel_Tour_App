@@ -18,16 +18,55 @@ class _LoginPageState extends State<LoginPage> {
   getBody(){
     return Container(
       height: 900,
-    width: 900,
-    decoration: BoxDecoration(
-      image: DecorationImage(image: AssetImage('assets/images/onboarding_2.png'),
-      fit: BoxFit.cover,
+      width: 900,
+      decoration: BoxDecoration(
+        image: DecorationImage(image: AssetImage("assets/images/onboarding_2.png"),
+        fit: BoxFit.cover
+        )
       ),
-    ),
-      child: Container(
-        
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 250, top: 60),
+            child: Container(
+              height: 70,
+              width: 70,
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.6),
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              child: Align(alignment: Alignment.center,
+                  child: Text("Tx",style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.red[800]),
+                  )
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 100,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 50),
+            child: Text("You deserve to explore more.", style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white, fontSize: 35)),
+          )
+        ],
       ),
     );
+
+
+
+
+    //   Container(
+    //   height: 900,
+    // width: 900,
+    // decoration: BoxDecoration(
+    //   image: DecorationImage(image: AssetImage('assets/images/onboarding_2.png'),
+    //   fit: BoxFit.cover,
+    //   ),
+    // ),
+    //   child: Container(
+    //
+    //   ),
+    // );
 
   }
 }
